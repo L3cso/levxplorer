@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+}
+
+
+/*Tupography*/
+
+h1, h2, h3 {
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/*Sections*/
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    /* display: flex; */
+    /* align-content: center; */
+
+}
+
+nav li {
+    margin: 1em;
+}
