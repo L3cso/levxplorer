@@ -2,7 +2,7 @@
 
 
 
-
+/*Global*/
 
 
 *, *::before, *::after {
@@ -15,33 +15,88 @@ html {
     font-size: 1.125rem;
 }
 
+body {
+    text-align: center;
+}
 
-/*Tupography*/
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+section {
+    padding: 3em 1em;
+}
+
+
+
+/*Typography*/
 
 h1, h2, h3 {
-    font-family: "Merriweather", serif;
+    /* font-family: "Merriweather", serif; */
+    font-family: 'Bungee Inline', serif;
+    font-weight: 400;
+    margin: 0;
 }
 
 h1 {
-    font-size: 5rem;
-}
-
-h2 {
-    font-size: 4rem;
-}
-
-h3 {
     font-size: 2rem;
 }
 
-/*Sections*/
+h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.1;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*Buttons*/
+
+.btn {
+    padding: 0.75em 2.5em;
+    background-color: darkorange;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.35em;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+
+
 
 /*HEADER*/
 
 header {
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 1px solid darkblue;
+}
+
+main, footer {
+    position: relative;
+    top: 60px;
 }
 
 .logo {
@@ -50,13 +105,125 @@ header {
 }
 
 nav ul {
-    list-style: none;
-    display: inline-block;
-    /* display: flex; */
-    /* align-content: center; */
-
+    display: flex;
+    margin: 0;
 }
 
 nav li {
     margin: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus {
+    text-decoration: underline;
+
+}
+
+
+/*Sections*/
+
+#hero {
+    background-image: url("../images/Billinghurst\ cave\ Malta.JPG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 15vh 0;
+    text-align: center;
+}
+
+.hero__container {
+    background-color: hsla(360, 0%, 100%, 0.1);
+    padding: 1em;
+}
+
+#hero a {
+    margin-top: 1em;
+}
+
+
+
+#intro {
+    text-align: center;
+}
+
+#about {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.about__intro {
+    padding: 3em 1em;
+    background-image: url("../images/Tugboat_Rozi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: darkblue;
+    background-blend-mode: screen;
+}
+
+
+.about__body {
+    padding: 3em 1em;
+}
+
+#dives {
+    background-color: rgb(250, 250, 250);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.team-bio {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#contact {
+    background-color: rgb(250, 250, 250);
+}
+
+#contact h2 {
+    padding-bottom: 1em;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    margin: auto;
+}
+.footer-nav {
+    flex-direction: column;
+    margin: auto;
+}
+
+footer img {
+    background-blend-mode: screen;
+    background-color: darkblue;
+    width: 60px;
+    display: block;
+    margin: 0.25em;
 }

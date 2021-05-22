@@ -7,89 +7,92 @@
         <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
         <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,400&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,400&family=Roboto:ital,wght@0,400;0,900;1,400&family=Bungee+Inline&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img src="./resources/images/logo.png" class="logo">
+            <a href="index.html"><img src="./resources/images/logo.png" class="logo"></a>
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Dives</a></li>
-                    <li><a>Team</a></li>
-                    <li><a>Contact us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#dives">Dives</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="hero">
-                <h1>LevXplorer</h1>
-                <p>Recreational and technical courses in Malta</p>
-                <a class="btn">Book Now</a>
+            <section id="hero">
+                <div class="hero__container">
+                    <h1>LevXplorer</h1>
+                    <p>Recreational and technical courses in Malta</p>
+                    <a href="index.html" class="btn">Book Now</a>
+                </div>
             </section>
-            <section class="intro">
+            <section id="intro">
                 <h2>Book 1-on-1 courses and discover what Malta hides beneath the surface</h2>
             </section>
-            <section class="about">
+            <section id="about">
                 <div class="about__intro">
                     <h3>In the past 4 years we have frequented the best wrecks, caverns and reefs of Malta, and we are ready to share these with professional guiding.</h3>
                 </div>
                 <div class="about__body">
-                    <p>What we offer:</p>
-                    <ul>
-                        <li>Recreational and technical courses</li>
-                        <li>Guided dives - we take you either from the shore or boat to discover the best divesites in Malta</li>
-                        <li>Equipment rental - apart from cylinders and weights, you will find everything you need for a proper dive, regardless you dive with doubles or sidemount</li>
-                        <li>We will fill your tanks with air, Nitrox, or Trimix</li>
-                        <li>Air[ort transfer - so you can leave your equipment straight at the dive center</li>
-                    </ul>
+                        <p>Recreational and technical courses
+                        Guided dives - we take you either from the shore or boat to discover the best divesites in Malta</p>
+                        <p>
+                        Equipment rental - apart from cylinders and weights, you will find everything you need for a proper dive, regardless you dive with doubles or sidemount
+                        We will fill your tanks with air, Nitrox, or Trimix
+                        Air[ort transfer - so you can leave your equipment straight at the dive center</p>
                 </div>
             </section>
-            <section class="dives">
+            <section id="dives">
                 <h2>Book your dives now</h2>
                 <p> gananan nanaan dives dives diving is good diving is guiding and courses and technical courses you will learn a lot and we get all your money except not but we can dive for free</p>
                 <div class="btn-group">
-                    <a class="btn">Recreational</a>
-                    <a class="btn">Technical</a>
-                    <a class="btn">Guided Dives</a>
+                    <a href="https://blackfinsdiving.com" class="btn">Recreational</a>
+                    <a href="https://blackfinsdiving.com" class="btn">Technical</a>
+                    <a href="https://blackfinsdiving.com" class="btn">Guided Dives</a>
                 </div>
             </section>
-            <section class="team">
+            <section id="team">
                 <h2>Meet Our Team</h2>
                 <div class="container">
                     <div class="card">
-                        <img src="">
+                        <img src="./resources/images/molnar_levente.jpg">
                         <h3>Levi</h3>
-                        <p>Levi is the main boss at LevXplorer he is the owner and the CEO and board of members all in one person. He works out and has been diving in Malta for 4 years now. He wants to do a lot of tech diving.</p>
+                        <p class="team-bio">Levi is the main boss at LevXplorer he is the owner and the CEO and board of members all in one person. He works out and has been diving in Malta for 4 years now. He wants to do a lot of tech diving.</p>
                     </div>
                     <div class="card">
-                        <img src="">
+                        <img src="./resources/images/sergio_velazquez.jpg.">
                         <h3>Sergio</h3>
-                        <p>Sergio is the second biggest guy at the organisation, he has been diving for 50 years now and basically lives underwater, only comes up to the surface to eat some meat and BBQ.</p>
+                        <p class="team-bio">Sergio is the second biggest guy at the organisation, he has been diving for 50 years now and basically lives underwater, only comes up to the surface to eat some meat and BBQ.</p>
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section id="contact">
                 <h2>Contact Us</h2>
-                <a>Email</a>
-                <a>Phone</a>
-                <a>Facebook</a>
-                <a>Instagram</a>
+                <ul class="btn-group">
+                    <li><a href="mailto:info@blackfinsdiving.com"class="btn">Email</a></li>
+                    <li><a href="tel:35699110098" class="btn">Phone</a></li>
+                    <li><a href="https://facebook.com/levxplorer" class="btn">Facebook</a></li>
+                    <li><a href="https://instagram.com/levxplorer" class="btn">Instagram</a></li>
+                </ul>
+
             </section>
         </main>
         <footer>
-            <nav>
-                <ul>
+            <ul class="footer-nav">
                     <li><a>Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Dives</a></li>
                     <li><a>Team</a></li>
                     <li><a>Contact us</a></li>
-                </ul>
-            </nav>
-            <img src="">
-            <img src="">
+            </ul>
+            <ul class="footer-nav">
+                    <li><a><img src="./resources/images/iantd_logo.gif"></a></li>
+                    <li><a><img src="./resources/images/tecline_logo.png"></a></li>
+            </ul>          
         </footer>
     </body>
 
