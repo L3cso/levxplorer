@@ -1,9 +1,5 @@
 
-
-
-
 /*Global*/
-
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -27,7 +23,6 @@ body, ul {
 section {
     padding: 3em 1em;
 }
-
 
 
 /*Typography*/
@@ -74,9 +69,6 @@ ul {
     flex-direction: column;
     gap: 0.5em;
 }
-
-
-
 
 
 /*HEADER*/
@@ -290,7 +282,6 @@ footer img {
     #team {
         padding-bottom: 3em;
     }
-
 
     .container {
         flex-direction: row;
